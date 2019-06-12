@@ -7,13 +7,13 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-	<title>Azure Search Demo</title>
+	<title>OCP Search Demo</title>
 
 	<!-- Bootstrap core CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
 
 	<!-- Custom styles for this template -->
-	<link href="https://liamca.github.io/RealEstateDemoJS/search.css" rel="stylesheet">
+	<link href="./search.css" rel="stylesheet">
 
 	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.10.2.min.js"></script>
 	<link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.11.4/themes/smoothness/jquery-ui.css">
@@ -28,7 +28,7 @@
 <body>
 
 	<nav class="navbar navbar-expand-lg bg-info border-bottom navbar-inverse text-white">
-		<h3>Azure Search Demo</h3>&nbsp;&nbsp;
+		<h3>OCP Search Demo</h3>&nbsp;&nbsp;
 
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav">
@@ -38,7 +38,7 @@
 			  </ul>
 			<ul class="navbar-nav ml-auto mt-2 mt-lg-0 ">
 				<li class="nav-item active ">
-					<a class="nav-link text-white" href="https://azure.microsoft.com/services/search/">Learn More <span class="sr-only">(current)</span></a>
+					<b class="nav-link text-white" id="copyright"></b>
 				</li>
 			</ul>
 		</div>
@@ -51,26 +51,12 @@
 					<input type="text" class="form-control" placeholder="Search..." id="q" >
 				</div> <!-- /input-group -->
 			</div>
-
-			<nav class="col-md-12 collapse show" id="sidebar">
-				<div class="col-md-12 pt-2 pl-1">
-					<b>Cities</b>      
-				</div>
-				<div id="cityDiv"></div>
-			</nav>
-
-			<nav class="col-md-12 collapse show" id="sidebar">
-				<div class="col-md-12 pt-2 pl-1">
-					<b>Tags</b>      
-				</div>
-				<div id="tagsDiv"></div>
-			</nav>
 			
 		</div> <!-- /#sidebar-wrapper -->
 
 		<!-- Page Content -->
 		<div> 
-			<div id=paginationDiv" class='row'>
+			<div id="paginationDiv" class='row'>
 				<div class='col-md-2 pt-1'>
 					<div class='card-block p-1'>
 						<p id="pagination"></p>
@@ -88,7 +74,6 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script src="globals.js"></script>
 	<script src="search.js"></script>
-	<script src="facets.js"></script>
 	<script src="autocomplete.js"></script>
 	<script src="paging.js"></script>	
 

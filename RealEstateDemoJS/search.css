@@ -7,6 +7,14 @@ body {
   overflow-x: hidden;
 }
 
+.row {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.bg-info {
+  background-color: #93c21e;
+}
+
 #sidebar-wrapper {
   min-height: 100vh;
   margin-left: -15rem;
